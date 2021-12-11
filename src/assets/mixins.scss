@@ -1,0 +1,42 @@
+$small-width: 480px;
+$medium-width: 768px;
+$large-width: 1024px;
+
+$title-color:#788795;
+$label-color:#293845;
+$property-color:#788896;
+$golden-color:#F7C325;
+$orange-color:#E8833A;
+$blue-color:#2C88D9;
+$gray-color:#C3CFD9;
+$property-color: rgba(41, 56, 68, 0.75);
+$primary   : #f7c325;
+$secondary : #2c88d9;
+$accent    : #9C27B0;
+
+$dark      : #1d1d1d;
+
+$positive  : #21BA45;
+$negative  : #C10015;
+$info      : #e8833a;
+$warning   : #F2C037;
+
+
+@mixin media_small {
+  @media (max-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin media_medium {
+  @media (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin media_large {
+  @media (min-width: #{$large-width}) {
+    @content;
+  }
+}
+
